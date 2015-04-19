@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Memiana siute" verbose="1">
+    <test name="Compare Contacts Count Test">
+        <classes>
+            <class name="tests.CompareContactsTest"/>
+        </classes>
+    </test>
+</suite>
