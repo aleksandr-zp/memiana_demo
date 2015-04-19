@@ -29,4 +29,8 @@ public class LoginPage extends BasePage {
         click("loginFormButton", By.id("loginFormButton"));
     }
 
+    public void waitForVisibilityResultLoginSuccess() {
+        waitForVisibilityResult("startPage__wrapper", By.className("startPage__wrapper"));
+    }
+
 }

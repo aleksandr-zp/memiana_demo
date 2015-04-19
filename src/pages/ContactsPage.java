@@ -39,4 +39,7 @@ public class ContactsPage extends BasePage {
         contactsCount = Integer.parseInt(element.getAttribute("data-contact-index").trim());
         return contactsCount + 1;
     }
+    public void waitForVisibilityResultContactsPage() {
+        waitForVisibilityResult("count", By.className("count"));
+    }
 }

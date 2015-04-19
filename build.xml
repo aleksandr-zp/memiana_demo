@@ -1,4 +1,4 @@
-<project name="AskFM" default="testAll">
+<project name="Memiana" default="testAll">
     <property environment="env"/>
     <property name="src.dir" location="${basedir}${file.separator}src"/>
     <property name="build.dir" location="${basedir}${file.separator}build"/>
@@ -69,7 +69,7 @@
 
             <xmlfileset dir="${basedir}" includes="testng.xml"/>
 
-            <sysproperty key="org.uncommons.reportng.title" value="Ask.fm Automated Test Report"/>
+            <sysproperty key="org.uncommons.reportng.title" value="Memiana Automated Test Report"/>
             <sysproperty key="org.uncommons.reportng.frames" value="false"/>
             <sysproperty key="org.uncommons.reportng.escape-output" value="false"/>
 

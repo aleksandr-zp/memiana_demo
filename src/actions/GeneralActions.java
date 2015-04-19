@@ -28,11 +28,13 @@ public class GeneralActions {
         loginPage.typeLoginName(name);
         loginPage.typeLoginPassword(password);
         loginPage.clickLoginButton();
+        loginPage.waitForVisibilityResultLoginSuccess();
     }
 
     public int getVisibleContactsCount() {
         int contactsCountDefault;
         contactsPage.openFriendForm();
+        contactsPage.waitForVisibilityResultContactsPage();
         contactsCountDefault = contactsPage.getVisibleContactsCount();
         return contactsCountDefault;
     }
