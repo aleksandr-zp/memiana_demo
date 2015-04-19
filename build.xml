@@ -3,6 +3,7 @@
     <property name="src.dir" location="${basedir}${file.separator}src"/>
     <property name="build.dir" location="${basedir}${file.separator}build"/>
     <property name="lib.dir" location="${basedir}${file.separator}lib"/>
+    <property name="browser" value="chrome"/>
 
 
     <property name="bin.dir" location="${build.dir}${file.separator}bin"/>
@@ -72,6 +73,7 @@
             <sysproperty key="org.uncommons.reportng.title" value="Memiana Automated Test Report"/>
             <sysproperty key="org.uncommons.reportng.frames" value="false"/>
             <sysproperty key="org.uncommons.reportng.escape-output" value="false"/>
+            <sysproperty key="browser" value="${browser}"/>
 
             <sysproperty key="report.dir" value="${report.dir}"/>
         </testng>
