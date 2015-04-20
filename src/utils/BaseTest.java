@@ -21,7 +21,6 @@ public class BaseTest {
             driver = new ChromeDriver();
         }else if (browser.equals("firefox")){
             driver = new FirefoxDriver();
-            driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         }
     }
 
