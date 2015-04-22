@@ -12,17 +12,16 @@ public class GeneralActions {
     private WebDriver driver;
     private LoginPage loginPage;
     private ContactsPage contactsPage;
-    private BasePage page;
 
     public GeneralActions(WebDriver driver) {
         this.driver = driver;
 
         loginPage = new LoginPage(driver);
         contactsPage = new ContactsPage(driver);
-        page = new BasePage(driver);
     }
 
     public void login(String name, String password) {
+        Reporter.log("Start test");
         Reporter.log("Login");
         loginPage.openMainPage();
         loginPage.typeLoginName(name);
