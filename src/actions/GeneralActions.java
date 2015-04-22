@@ -21,7 +21,6 @@ public class GeneralActions {
     }
 
     public void login(String name, String password) {
-        Reporter.log("Start Test");
         Reporter.log("Login");
         loginPage.openMainPage();
         loginPage.typeLoginName(name);
